@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="Wolf_Survive" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuBg" translatesAutoresizingMaskIntoConstraints="NO" id="3FB-de-yH4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7U8-Gb-dwb">
+                    <rect key="frame" x="309" y="58" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="YHo-oO-rhm"/>
+                        <constraint firstAttribute="height" constant="50" id="vQY-vG-lhI"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="privacyPolicyButton"/>
+                    <connections>
+                        <action selector="onTermsButtonClick:" destination="-1" eventType="touchUpInside" id="aXZ-4y-3Cg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBi-HN-Pzs">
+                    <rect key="frame" x="117.66666666666669" y="528.66666666666663" width="140" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="30Y-lj-ikX"/>
+                        <constraint firstAttribute="width" constant="140" id="MHu-uQ-ZTX"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="playButton"/>
+                    <connections>
+                        <action selector="onPlayButtonClick:" destination="-1" eventType="touchUpInside" id="w70-W6-cOc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3FB-de-yH4" secondAttribute="bottom" id="6Dz-7Y-saD"/>
+                <constraint firstItem="3FB-de-yH4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DxL-zO-X7E"/>
+                <constraint firstItem="3FB-de-yH4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GYs-Oy-7DR"/>
+                <constraint firstItem="cBi-HN-Pzs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IzU-1u-6zt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7U8-Gb-dwb" secondAttribute="trailing" constant="16" id="LKE-ZN-2B5"/>
+                <constraint firstItem="cBi-HN-Pzs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="150" id="MMm-I5-qVQ"/>
+                <constraint firstItem="7U8-Gb-dwb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="XBU-iu-eJr"/>
+                <constraint firstAttribute="trailing" secondItem="3FB-de-yH4" secondAttribute="trailing" id="g5J-93-axj"/>
+            </constraints>
+            <point key="canvasLocation" x="53" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menuBg" width="2160" height="4800"/>
+        <image name="playButton" width="751" height="299"/>
+        <image name="privacyPolicyButton" width="243" height="245"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
